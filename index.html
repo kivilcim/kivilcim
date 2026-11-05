@@ -256,6 +256,16 @@ h2.a{font:400 clamp(38px,4.5vw,64px)/1.1 var(--sans);letter-spacing:-.047em}
 .foot .mono{font-size:11px;color:var(--dim)}.foot a{color:var(--ink)}
 .foot a:hover{text-decoration:underline;text-underline-offset:4px}
 
+  .mark{font:500 34px/1 var(--sans);letter-spacing:-2px}                          /* was -3px */
+h1{font:400 clamp(46px,7.8vw,112px)/1.02 var(--sans);letter-spacing:-.04em}       /* was -.0625em */
+h2.big{font:400 clamp(40px,4.5vw,64px)/1.1 var(--sans);letter-spacing:-.03em}     /* was -.047em */
+h2.p{…;letter-spacing:-.028em;…}                                                  /* was -.043em */
+.m-head h3{…;letter-spacing:-.022em}                                              /* was -.036em */
+.metric output{…;letter-spacing:-.03em;…}                                         /* was -.05em */
+h2.a{font:400 clamp(38px,4.5vw,64px)/1.1 var(--sans);letter-spacing:-.03em}       /* was -.047em */
+.step h3{font:400 28px/1.15 var(--sans);letter-spacing:-.018em}                   /* was -.029em */
+.statement a{…;letter-spacing:-.038em;…}                                          /* was -.059em */
+
 /* responsive */
 @media(max-width:1100px){
   .story,.about .cols{grid-template-columns:1fr 1fr;gap:40px}.story .scope,.about .cols>:first-child{grid-column:1/-1}
