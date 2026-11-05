@@ -6,16 +6,36 @@
 <title>Kıvılcım Kökbil — Product designer</title>
 <meta name="description" content="Kıvılcım Kökbil is a London-based product designer. Independent concepts in finance, travel and reading.">
 <meta name="theme-color" content="#080808">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/TimelessSansVF.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/TimelessSerifVF.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{
+  font-family:'Timeless Sans';
+  src:url('fonts/TimelessSansVF.woff2') format('woff2'),
+      url('fonts/TimelessSansVF.woff') format('woff'),
+      url('fonts/TimelessSansVF.ttf') format('truetype');
+  font-weight:100 900;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Timeless Serif';
+  src:url('fonts/TimelessSerifVF.woff2') format('woff2'),
+      url('fonts/TimelessSerifVF.woff') format('woff'),
+      url('fonts/TimelessSerifVF.ttf') format('truetype');
+  font-weight:100 900;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Timeless Serif';
+  src:url('fonts/TimelessSerifItalicVF.woff2') format('woff2'),
+      url('fonts/TimelessSerifItalicVF.woff') format('woff'),
+      url('fonts/TimelessSerifItalicVF.ttf') format('truetype');
+  font-weight:100 900;font-style:italic;font-display:swap;
+}
 :root{
   --bg:#080808;--bg-2:#151515;--ink:#f2f1ed;--mute:#aaaaa6;--dim:#777773;--rule:#333;
   --p-ink:#222321;--p-dim:#777773;--p-line:#cbcbc4;--sage:#81877b;
-  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
-  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --sans:'Timeless Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'Timeless Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --serif:'Timeless Serif',Georgia,'Times New Roman',serif;
   --pad:clamp(20px,4.45vw,64px);--ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box;margin:0}
